@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Quiz de JavaScript 💻</h1>
+
+        <p class="descricao">
+            Teste seus conhecimentos sobre programação!
+        </p>
+
+        <div class="informacoes">
+            <span id="progresso">0/10 respondidas</span>
+            <span id="pontuacao">Pontos: 0</span>
+        </div>
+
+        <form id="quiz">
+
+            <div class="pergunta">
+                <h3>1. Qual palavra é utilizada para criar uma variável cujo valor pode ser alterado?</h3>
+
+                <label><input type="radio" name="q1" value="a"> const</label>
+                <label><input type="radio" name="q1" value="b"> let</label>
+                <label><input type="radio" name="q1" value="c"> typeof</label>
+
+            </div>
+
+            <div class="pergunta">
+                <h3>2. Qual tipo de dado representa verdadeiro ou falso?</h3>
+
+                <label><input type="radio" name="q2" value="a"> String</label>
+                <label><input type="radio" name="q2" value="b"> Number</label>
+                <label><input type="radio" name="q2" value="c"> Boolean</label>
+
+            </div>
+
+            <div class="pergunta">
+                <h3>3. Qual operador representa o resto de uma divisão?</h3>
+
+                <label><input type="radio" name="q3" value="a"> %</label>
+                <label><input type="radio" name="q3" value="b"> /</label>
+                <label><input type="radio" name="q3" value="c"> *</label>
+
+            </div>
+
+            <div class="pergunta">
+                <h3>4. O que significa o operador &&?</h3>
+
+                <label><input type="radio" name="q4" value="a"> OU</label>
+                <label><input type="radio" name="q4" value="b"> E</label>
+                <label><input type="radio" name="q4" value="c"> NÃO</label>
+
+            </div>
+
+            <div class="pergunta">
+                <h3>5. Para que serve um array?</h3>
+
+                <label><input type="radio" name="q5" value="a"> Armazenar vários valores</label>
+                <label><input type="radio" name="q5" value="b"> Fazer divisões</label>
+                <label><input type="radio" name="q5" value="c"> Criar condições</label>
+
+            </div>
+
+            <div class="pergunta">
+                <h3>6. Quando o bloco else é executado?</h3>
+
+                <label><input type="radio" name="q6" value="a"> Sempre</label>
+                <label><input type="radio" name="q6" value="b"> Quando o if é verdadeiro</label>
+                <label><input type="radio" name="q6" value="c"> Quando as condições anteriores são falsas</label>
+
+            </div>
+
+            <div class="pergunta">
+                <h3>7. Qual estrutura é utilizada para repetir comandos?</h3>
+
+                <label><input type="radio" name="q7" value="a"> if</label>
+                <label><input type="radio" name="q7" value="b"> for</label>
+                <label><input type="radio" name="q7" value="c"> const</label>
+
+            </div>
+
+            <div class="pergunta">
+                <h3>8. Qual é a função do return?</h3>
+
+                <label><input type="radio" name="q8" value="a"> Apagar uma variável</label>
+                <label><input type="radio" name="q8" value="b"> Retornar um resultado de uma função</label>
+                <label><input type="radio" name="q8" value="c"> Repetir um código</label>
+
+            </div>
+
+            <div class="pergunta">
+                <h3>9. Qual a diferença entre == e ===?</h3>
+
+                <label><input type="radio" name="q9" value="a"> Não existe diferença</label>
+                <label><input type="radio" name="q9" value="b"> === compara também o tipo</label>
+                <label><input type="radio" name="q9" value="c"> == compara apenas o tipo</label>
+
+            </div>
+
+            <div class="pergunta">
+                <h3>10. O que typeof faz?</h3>
+
+                <label><input type="radio" name="q10" value="a"> Mostra o tipo de dado</label>
+                <label><input type="radio" name="q10" value="b"> Cria uma função</label>
+                <label><input type="radio" name="q10" value="c"> Adiciona um array</label>
+
+            </div>
+
+        </form>
+
+        <div id="resultado"></div>
+
+        <button type="button" id="reiniciar">
+            Refazer quiz
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
